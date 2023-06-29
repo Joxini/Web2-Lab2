@@ -15,6 +15,6 @@ export class Cabecera_Factura {
     Ruc_Cliente: Cliente;
     
     @OneToOne(() => Proveedor)
-    @JoinColumn({ name: 'CodigoProveedor' })
+    @JoinColumn({ name: 'Codigo_Vendedor' })
     Codigo_Vendedor: Proveedor;
 }
